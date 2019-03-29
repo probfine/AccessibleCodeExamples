@@ -1,0 +1,25 @@
+<div class="deque-wrapper">
+ <!-- The container for the dialog -->
+  <div class="dialog hidden deque-wrapper" id="dialog" 
+  data-is-modal="true" data-tabtrap></div>
+  
+  <!-- A utility for demo purposes to allow
+  switching between dialog types -->
+  <div>
+    <label for="dialog_select">Select a Dialog Type</label>
+    <select id="dialog_select"></select>
+  </div>
+  
+  <!-- The content of the regular dialog (if selected) -->
+  <div class="hidden" id="modalFormWrapper">
+    <p id="modalDescription">This is a modal view for logging in.</p>
+    <form id="modalForm">
+      <label for="nameInput">Name</label>
+      <input id="nameInput" type="text" data-trap-enter="true">
+      <label for="passwordInput">Password</label>
+      <input id="passwordInput" type="password" data-trap-enter="true">
+    </form>
+  </div>
+  
+  <div><button id="alert_trigger">Show Dialog!</button></div>
+</div>
