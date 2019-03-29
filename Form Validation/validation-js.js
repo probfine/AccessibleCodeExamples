@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("deque", [], factory);
+		define("price", [], factory);
 	else if(typeof exports === 'object')
-		exports["deque"] = factory();
+		exports["price"] = factory();
 	else
-		root["deque"] = factory();
+		root["price"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -279,7 +279,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return output.classList.add(c);
 	  });
 	
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	
 	  output.innerHTML = message;
 	  if (timeout) {
@@ -326,10 +326,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  xButton.innerHTML = '<span aria-hidden="true"></span>';
 	  alert.appendChild(xButton);
 	
-	  alert.classList.add('deque');
+	  alert.classList.add('price');
 	  alert.classList.add('dialog_box');
 	
-	  var defaultClassList = ['deque', 'dialog_box'];
+	  var defaultClassList = ['price', 'dialog_box'];
 	  for (var i = 0; i < alert.classList.length; i++) {
 	    defaultClassList.push(alert.classList[i]);
 	  }
@@ -885,7 +885,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function createScreen() {
 	  var screen = document.createElement('div');
-	  screen.classList.add('deque');
+	  screen.classList.add('price');
 	  screen.classList.add('screen');
 	  screen.show = showScreen.bind(null, screen);
 	  screen.clear = clearScreen.bind(null, screen);
@@ -917,7 +917,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  tip.setAttribute('role', 'tooltip');
 	  tip.id = tipID;
-	  tip.classList.add('deque');
+	  tip.classList.add('price');
 	  tip.classList.add('tooltip');
 	  tip.innerText = tipText;
 	  trigger.parentElement.insertBefore(tip, trigger);
@@ -1218,7 +1218,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  tip.id = tipID;
 	
 	  // see tooltip/style.less for tooltip style.
-	  tip.classList.add('deque');
+	  tip.classList.add('price');
 	  tip.classList.add('tooltip');
 	
 	  tip.appendChild(content);
@@ -1325,7 +1325,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return;
 	  }
 	  var targetURL;
-	  element.classList.add('deque');
+	  element.classList.add('price');
 	
 	  if (element.getAttribute('href')) {
 	    targetURL = element.getAttribute('href');
@@ -1418,7 +1418,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	
 	function initializeButton(element, behavior) {
-	  element.classList.add('deque');
+	  element.classList.add('price');
 	  assignRoleIfNecessary(element);
 	  bindElementToInputs(element, behavior);
 	}
@@ -1426,7 +1426,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	function initializeToggleButton(element, toggleFunction) {
 	  var initialState = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 	
-	  element.classList.add('deque');
+	  element.classList.add('price');
 	  assignRoleIfNecessary(element);
 	  element.setAttribute('aria-pressed', initialState);
 	  initializeIcon(element);
@@ -1502,7 +1502,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  classes.forEach(function (c) {
 	    return checkbox.classList.add(c);
 	  });
-	  checkbox.classList.add('deque');
+	  checkbox.classList.add('price');
 	  checkbox.setAttribute('tabindex', '0');
 	  checkbox.setAttribute('role', 'checkbox');
 	  checkbox.setAttribute('aria-labelledby', spanID);
@@ -1635,7 +1635,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    group.appendChild(item);
 	  });
 	
-	  group.classList.add('deque');
+	  group.classList.add('price');
 	  group.classList.add('checkbox-group');
 	  return group;
 	}
@@ -1720,7 +1720,7 @@ return /******/ (function(modules) { // webpackBootstrap
     var groupId = label.replace(/\W/g, '');
 	
 	  var output = (0, _containerUtils.createFieldset)(label);
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  var group = document.createElement('div');
 	  group.setAttribute('role', 'radiogroup');
 	
@@ -1904,7 +1904,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var treeRoot = document.createElement('ul');
 	
 	  treeRoot.setAttribute('role', 'tree');
-	  treeRoot.classList.add('deque');
+	  treeRoot.classList.add('price');
 	
 	  if (config.selectStyle === 'multi') {
 	    treeRoot.setAttribute('aria-multiselectable', 'true');
@@ -2685,7 +2685,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function createMenu(container, data, config) {
 	  var menu = document.createElement('ul');
-	  menu.classList.add('deque');
+	  menu.classList.add('price');
 	  setRole(menu, config);
 	  setOrientation(menu, config);
 	
@@ -3778,7 +3778,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  output.appendChild(slider);
 	  output.appendChild(maxLabel);
 	
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.classList.add('multirange-widget');
 	  output.classList.add(orientation);
 	  classes.forEach(function (c) {
@@ -3859,7 +3859,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 	
 	  var output = document.createElement('input');
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.classList.add('slider-widget');
 	
 	  if (isNaN(minValue) || isNaN(maxValue) || isNaN(initialValue) || isNaN(stepSize)) {
@@ -4240,7 +4240,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	
 	  var output = document.createElement('div');
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.classList.add('autocomplete');
 	
 	  var input = document.createElement('input');
@@ -4638,7 +4638,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  (0, _validator.validateInput)(data);
 	
 	  var output = document.createElement('div');
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.classList.add('tabPanel');
 	  output.id = (0, _guidUtils.generateGuid)();
 	
@@ -5147,7 +5147,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      unboundMessage = _ref$unboundMessage === undefined ? 'In progress, please wait...' : _ref$unboundMessage;
 	
 	  var output = document.createElement('progress');
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.setAttribute('role', 'progressbar');
 	  output.setAttribute('aria-valuemin', minValue);
 	  output.setAttribute('aria-valuemax', maxValue);
@@ -5212,7 +5212,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	function html5Version(label, content) {
 	  var output = document.createElement('details');
 	  var summary = document.createElement('summary');
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.classList.add('expander');
 	  summary.innerHTML = label;
 	
@@ -5250,7 +5250,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function html4Version(label, content) {
 	  var output = document.createElement('div');
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.classList.add('expander');
 	
 	  var header = document.createElement('div');
@@ -5398,7 +5398,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	function configureFormValidation(form, config) {
-	  form.classList.add('deque');
+	  form.classList.add('price');
 	  form.setAttribute('novalidate', 'true');
 	
 	  var feedbackType = form.getAttribute('data-feedback-type') || FEEDBACK_TYPES.TOP;
@@ -5472,10 +5472,10 @@ return /******/ (function(modules) { // webpackBootstrap
 								var failedPattern = '<span class="errorExplanation pattern">' + failedPattern + '</span>';
 							}
 							else failedPattern = '';
-							//$(this).after('<span class="errorExplanationOuterWrapper"><span class="errorExplanationWrapper icon message" id="' + descId + '"><span class="deque glyph exclamation-triangle" aria-hidden="true"></span> ' + failedRequire + ' ' + failedPattern + '</span></span>');
+							//$(this).after('<span class="errorExplanationOuterWrapper"><span class="errorExplanationWrapper icon message" id="' + descId + '"><span class="price glyph exclamation-triangle" aria-hidden="true"></span> ' + failedRequire + ' ' + failedPattern + '</span></span>');
 							var el = document.createElement('span');
 							el.className = 'errorExplanationOuterWrapper';
-							el.innerHTML = '<span class="errorExplanationWrapper icon message" id="' + descId + '"><span class="deque glyph exclamation-triangle" aria-hidden="true"></span> ' + failedRequire + ' ' + failedPattern + '</span>';
+							el.innerHTML = '<span class="errorExplanationWrapper icon message" id="' + descId + '"><span class="price glyph exclamation-triangle" aria-hidden="true"></span> ' + failedRequire + ' ' + failedPattern + '</span>';
 							thisInput.parentNode.insertBefore(el, thisInput.nextSibling);
 						}
 			    }
@@ -6111,7 +6111,7 @@ function createPasswordEvaluation() {
 	
 	  var output = document.createElement('table');
 	
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.setAttribute('role', 'grid');
 	  output.setAttribute('aria-readonly', 'true');
 	
@@ -6395,7 +6395,7 @@ function createPasswordEvaluation() {
 	  } : _ref$labelFunction;
 	
 	  var output = document.createElement('div');
-	  output.classList.add('deque');
+	  output.classList.add('price');
 	  output.classList.add('responsive-table-list-holder');
 	
 	  var caption = document.createElement('h3');
@@ -6565,7 +6565,7 @@ function createPasswordEvaluation() {
 	  holder.id = (0, _guidUtils.generateGuid)();
 	  var menuRoot = document.createElement('ul');
 	
-	  menuRoot.classList.add('deque');
+	  menuRoot.classList.add('price');
 	  menuRoot.classList.add('hierarchicalMenu');
 	
 	  var initialNode = mapDataToElement(holder.id, null, data);
