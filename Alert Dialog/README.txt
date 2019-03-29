@@ -1,18 +1,20 @@
 Step 1: Add Dependencies
-Add deque-widgets.css opens in a new window in the <head> of the document
+Add alertDialog-styles.css opens in a new window in the <head> of the document
 
-<link rel="stylesheet" type="text/css" href="deque-widgets.css"></li>
-Add a script link to deque-widgets.js opens in a new window to the bottom of the page.
+<link rel="stylesheet" type="text/css" href="alertDialog-styles.css"></li>
 
-<script type="text/javascript" src="deque-widgets.js"></script>
+Add a script link to alertDialog.js opens in a new window to the bottom of the page.
+
+<script type="text/javascript" src="alertDialog.js"></script>
+
 Fonts: Font glyphs are required for this widget (as currently styled). The CSS file refers to them in a folder called "_fonts" as a child element of the folder in which the CSS file resides. The fonts, from the Microsoft Web Framework (MWF) are available at these links:
 
 MWFMDL2.1.63.ttf opens in a new window
 MWFMDL2.1.63.woff opens in a new window
 
 Step 2: Add HTML
-Wrap the HTML in <div class="deque-wrapper">, for styling purposes.
-Create a <div> container with a unique ID, and with class="dialog hidden deque-wrapper".
+Wrap the HTML in <div class="price-wrapper">, for styling purposes.
+Create a <div> container with a unique ID, and with class="dialog hidden price-wrapper".
 
 Step 3: Add JavaScript
 In your javascript, invoke the function initializeAlertDialog and pass it the ID of the container you created. This will return a function that you can call, which takes two arguments: the trigger element (which is what receives focus when the dialog is closed), and a set of configuration parameters.
