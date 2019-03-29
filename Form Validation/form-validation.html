@@ -1,0 +1,19 @@
+<div class="formborder">
+    <div class="deque-wrapper formValidation">
+        <form id="form1" action="javascript:void(0)" data-feedback-type="top">
+            <div class="form-wrap">
+                <label for="name">Name</label>
+                <input id="name" data-validate="required" type="text" name="nameInput" data-validate-errormessage-required="You must provide a name.">
+              </div>
+            <div class="form-wrap">
+                <label for="terms">Do You Accept the Terms?</label> <span id="yorn">(Type &quot;yes&quot; or &quot;no&quot;)</span>
+                <input id="terms" type="text" name="termsInput" data-validate="required pattern" pattern="[Yy]es|[Nn]o" data-validate-errormessage-required="You must provide an answer." data-validate-errormessage-pattern="You must type 'yes' or 'no'." aria-describedby="yorn">
+            </div>
+            <div class="form-wrap">
+                <label for="pet">Pet's Name</label>
+                <input id="pet" type="text" name="petNameInput" data-validate="required" data-validate-errormessage-required="You must provide a pet name.">
+            </div>
+              <input type="submit">
+        </form>
+    </div>
+</div>
